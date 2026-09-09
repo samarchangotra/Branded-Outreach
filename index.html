@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Branded Outreach — Predictable Pipeline for B2B, PR &amp; Digital Agencies</title>
+<meta name="description" content="Branded Outreach helps B2B, PR, podcast guest booking and digital agencies acquire more clients through targeted outbound and demand generation. ICP-first targeting, personalised outreach, measurable pipeline." />
+<link rel="canonical" href="https://www.brandedoutreach.com/" />
+<meta name="theme-color" content="#050B18" />
+<meta name="robots" content="index, follow" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Branded Outreach" />
+<meta property="og:url" content="https://www.brandedoutreach.com/" />
+<meta property="og:title" content="Branded Outreach — Build a Predictable Pipeline" />
+<meta property="og:description" content="Targeted outbound and demand generation for agencies. 485 bookings generated in under 3 months from ~5,000 targeted prospects." />
+<meta property="og:image" content="https://www.brandedoutreach.com/og-image.jpg" />
+<meta property="og:image:alt" content="Branded Outreach campaign results: 62% open rate, 8% reply rate, 484 qualified opportunities." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Branded Outreach — Build a Predictable Pipeline" />
+<meta name="twitter:description" content="Targeted outbound and demand generation for B2B, PR, podcast booking and digital agencies." />
+<meta name="twitter:image" content="https://www.brandedoutreach.com/og-image.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Branded Outreach",
+  "url": "https://www.brandedoutreach.com",
+  "description": "Targeted outbound and demand generation for B2B, PR, podcast guest booking and digital agencies.",
+  "serviceType": ["Client Acquisition", "Targeted Outbound", "Demand Generation", "B2B Lead Sourcing", "Cold Email Outreach", "Sales Pipeline Development"],
+  "areaServed": "Worldwide"
+}
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --navy-950:#040915;
+  --navy-900:#050B18;
+  --navy-800:#0A1327;
+  --navy-700:#0F1B36;
+  --line:rgba(140,170,225,.14);
+  --line-strong:rgba(140,170,225,.28);
+  --blue:#2E6BFF;
+  --blue-soft:#5C8DFF;
+  --lime:#C8F751;
+  --white:#F3F7FF;
+  --muted:#93A4C4;
+  --muted-dim:#6E7F9E;
+
+  --max:1180px;
+  --gut:24px;
+  --r:14px;
+
+  --f-display:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --f-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+
+/* ============ BASE ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--navy-900);
+  color:var(--white);
+  font-family:var(--f-body);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:600;letter-spacing:-.025em;line-height:1.08;margin:0}
+h1{font-size:clamp(2.5rem,5.6vw,4.15rem);letter-spacing:-.035em}
+h2{font-size:clamp(1.95rem,3.7vw,2.95rem);letter-spacing:-.03em}
+h3{font-size:1.2rem;letter-spacing:-.015em;line-height:1.3}
+p{margin:0}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:4px}
+
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+.sec{padding-block:clamp(72px,10vw,132px);position:relative}
+.sec--tint{background:linear-gradient(180deg,var(--navy-950),var(--navy-900))}
+.rule{border-top:1px solid var(--line)}
+.lede{color:var(--muted);font-size:clamp(1.02rem,1.5vw,1.18rem);max-width:62ch}
+.dim{color:var(--muted)}
+.tabular{font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1}
+
+/* section heading block */
+.head{max-width:44ch}
+.head p{margin-top:20px}
+.head--wide{max-width:60ch}
+
+/* marker: a small pipeline node, used only where content is part of the system */
+.node{display:inline-flex;align-items:center;gap:10px;font-size:.86rem;color:var(--muted);letter-spacing:.01em;margin-bottom:22px}
+.node::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(200,247,81,.14)}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 26px;border-radius:10px;border:1px solid transparent;
+  font-family:var(--f-display);font-weight:600;font-size:1rem;letter-spacing:-.01em;
+  cursor:pointer;transition:background .18s ease,border-color .18s ease,color .18s ease;
+}
+.btn--primary{background:var(--blue);color:#fff}
+.btn--primary:hover{background:#1B57EE}
+.btn--lime{background:var(--lime);color:#0B1220}
+.btn--lime:hover{background:#D6FF6B}
+.btn--ghost{border-color:var(--line-strong);color:var(--white)}
+.btn--ghost:hover{border-color:var(--blue-soft);background:rgba(46,107,255,.09)}
+.btn--sm{padding:11px 19px;font-size:.94rem;border-radius:9px}
+.btn-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+
+/* ============ HEADER ============ */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(5,11,24,.82);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .2s ease,background .2s ease}
+.hdr.is-stuck{border-bottom-color:var(--line);background:rgba(4,9,21,.94)}
+.hdr__in{display:flex;align-items:center;gap:32px;height:74px}
+.logo{display:flex;align-items:center;gap:11px;font-family:var(--f-display);font-weight:700;font-size:1.09rem;letter-spacing:-.03em;flex-shrink:0}
+.logo__mark{width:26px;height:26px;flex:0 0 26px}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{font-size:.95rem;color:var(--muted);transition:color .16s ease}
+.nav a:hover{color:var(--white)}
+.hdr .btn{flex-shrink:0}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line-strong);border-radius:9px;padding:9px 11px;line-height:0;cursor:pointer}
+.burger svg{width:20px;height:20px;stroke:var(--white)}
+.mnav{display:none;border-top:1px solid var(--line);background:var(--navy-950);padding:18px var(--gut) 26px}
+.mnav.is-open{display:block}
+.mnav a{display:block;padding:13px 0;font-family:var(--f-display);font-weight:500;font-size:1.06rem;border-bottom:1px solid var(--line)}
+.mnav .btn{width:100%;margin-top:20px}
+
+/* ============ HERO ============ */
+.hero{position:relative;padding-top:clamp(56px,7vw,86px);padding-bottom:clamp(64px,8vw,110px);overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-40% 0 auto 50%;transform:translateX(-50%);
+  width:1100px;height:900px;pointer-events:none;
+  background:radial-gradient(closest-side,rgba(46,107,255,.20),transparent 72%);
+}
+.hero__in{position:relative;display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:clamp(32px,5vw,70px);align-items:center}
+.hero h1{margin-bottom:26px}
+.hero h1 span{display:block}
+.hero__sub{color:var(--muted);font-size:clamp(1.05rem,1.6vw,1.22rem);max-width:52ch;line-height:1.6}
+.hero__meta{display:flex;flex-wrap:wrap;gap:12px 30px;margin-top:44px;padding-top:26px;border-top:1px solid var(--line);color:var(--muted-dim);font-size:.9rem}
+.hero__meta b{color:var(--white);font-weight:600;font-variant-numeric:tabular-nums}
+
+/* pipeline visual */
+.pipe{background:linear-gradient(160deg,rgba(15,27,54,.9),rgba(8,16,34,.75));border:1px solid var(--line);border-radius:20px;padding:26px 24px 22px}
+.pipe__hd{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:20px;font-size:.84rem;color:var(--muted-dim)}
+.pipe__hd b{font-family:var(--f-display);color:var(--white);font-size:.95rem;font-weight:600;letter-spacing:-.01em}
+.pipe svg{width:100%;height:auto}
+
+/* ============ PROBLEM ============ */
+.probs{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:0;margin-top:56px;border-top:1px solid var(--line)}
+.prob{padding:26px 26px 30px 0;border-bottom:1px solid var(--line)}
+.prob__n{font-family:var(--f-display);font-size:.82rem;color:var(--blue-soft);font-variant-numeric:tabular-nums;margin-bottom:12px}
+.prob h3{font-size:1.06rem;margin-bottom:8px}
+.prob p{color:var(--muted);font-size:.97rem;line-height:1.6}
+.prob-note{margin-top:44px;padding:26px 28px;border-left:2px solid var(--lime);background:rgba(200,247,81,.04);border-radius:0 12px 12px 0;max-width:70ch;color:var(--white);font-size:1.05rem}
+
+/* ============ PROCESS ============ */
+.steps{margin-top:60px;display:grid;gap:0}
+.step{
+  display:grid;grid-template-columns:88px minmax(0,1fr);gap:clamp(18px,4vw,48px);
+  padding:32px 0;border-top:1px solid var(--line);position:relative;
+}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step__n{font-family:var(--f-display);font-weight:600;font-size:1.02rem;color:var(--blue-soft);font-variant-numeric:tabular-nums;padding-top:3px;position:relative}
+.step__n::after{content:"";position:absolute;left:38px;top:9px;width:calc(100% - 46px);height:1px;background:var(--line-strong)}
+.step__b{display:grid;grid-template-columns:minmax(0,270px) minmax(0,1fr);gap:clamp(14px,3vw,42px);align-items:start}
+.step h3{font-size:1.32rem}
+.step p{color:var(--muted);font-size:1rem}
+
+/* ============ SERVICES ============ */
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:56px}
+.card{background:var(--navy-800);border:1px solid var(--line);border-radius:var(--r);padding:28px 26px 30px}
+.card h3{margin-bottom:10px}
+.card p{color:var(--muted);font-size:.97rem;line-height:1.6}
+.card__ic{width:34px;height:34px;margin-bottom:18px;stroke:var(--blue-soft);stroke-width:1.5;fill:none}
+.card--who{display:flex;flex-direction:column}
+.card--who h3{font-size:1.1rem}
+.card--who .tagline{margin-top:auto;padding-top:18px;color:var(--lime);font-size:.88rem;font-weight:500}
+
+/* ============ RESULTS ============ */
+.results{background:var(--navy-950)}
+.board{margin-top:52px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:linear-gradient(150deg,rgba(16,29,58,.85),rgba(6,12,26,.9))}
+.board__hd{display:flex;flex-wrap:wrap;gap:10px 20px;align-items:baseline;justify-content:space-between;padding:22px 28px;border-bottom:1px solid var(--line)}
+.board__hd b{font-family:var(--f-display);font-weight:600;font-size:1.02rem}
+.board__hd span{color:var(--muted-dim);font-size:.88rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr)}
+.stat{padding:32px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat:nth-child(3n){border-right:0}
+.stat:nth-child(n+4){border-bottom:0}
+.stat__v{font-family:var(--f-display);font-weight:700;font-size:clamp(2rem,4.2vw,2.9rem);letter-spacing:-.035em;font-variant-numeric:tabular-nums;line-height:1}
+.stat__l{color:var(--muted);font-size:.93rem;margin-top:10px}
+.stat--lime .stat__v{color:var(--lime)}
+.stat--blue .stat__v{color:var(--blue-soft)}
+.bar{height:3px;background:rgba(140,170,225,.16);border-radius:2px;margin-top:16px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--blue);border-radius:2px;transition:width 1.1s cubic-bezier(.22,.7,.3,1)}
+.stat--lime .bar i{background:var(--lime)}
+.board__ft{padding:24px 28px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+.headline-result{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;padding:26px 28px;border:1px solid var(--line-strong);border-radius:16px;background:rgba(46,107,255,.07)}
+.headline-result b{font-family:var(--f-display);font-size:clamp(1.5rem,3vw,2rem);letter-spacing:-.03em;color:var(--lime);font-variant-numeric:tabular-nums}
+.headline-result p{max-width:52ch;color:var(--white);font-size:1.02rem}
+
+/* ============ WHY ============ */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px;margin-top:52px}
+.why__i{padding:24px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:22px 1fr;gap:16px}
+.why__i svg{width:18px;height:18px;margin-top:5px;stroke:var(--lime);stroke-width:2;fill:none}
+.why__i h3{font-size:1.04rem;margin-bottom:6px}
+.why__i p{color:var(--muted);font-size:.96rem}
+
+/* ============ CASE STUDY ============ */
+.cs{background:linear-gradient(180deg,var(--navy-950),#040A16)}
+.cs__hero{max-width:60ch}
+.cs__hero h2{margin-bottom:22px}
+.cs__strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:1px;margin:48px 0 8px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.cs__strip div{background:var(--navy-900);padding:20px 18px}
+.cs__strip b{display:block;font-family:var(--f-display);font-weight:700;font-size:1.5rem;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.cs__strip span{display:block;color:var(--muted-dim);font-size:.83rem;margin-top:6px}
+.story{margin-top:64px;display:grid;gap:0;border-left:1px solid var(--line-strong);padding-left:clamp(22px,4vw,42px)}
+.story__i{position:relative;padding-bottom:38px}
+.story__i:last-child{padding-bottom:0}
+.story__i::before{content:"";position:absolute;left:calc(-1 * clamp(22px,4vw,42px) - 5px);top:9px;width:9px;height:9px;border-radius:50%;background:var(--blue);border:2px solid var(--navy-950)}
+.story__i:last-child::before{background:var(--lime)}
+.story__k{font-family:var(--f-display);font-weight:600;font-size:1.12rem;margin-bottom:8px}
+.story__i p{color:var(--muted);max-width:68ch}
+.cs__note{margin-top:44px;color:var(--muted-dim);font-size:.92rem;max-width:72ch;border-top:1px solid var(--line);padding-top:22px}
+
+/* ============ ABOUT ============ */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:clamp(30px,6vw,72px);align-items:start}
+.about p+p{margin-top:20px}
+.about__panel{background:var(--navy-800);border:1px solid var(--line);border-radius:var(--r);padding:28px 26px}
+.about__panel h3{font-size:1.05rem;margin-bottom:18px}
+.about__panel ul{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.about__panel li{display:grid;grid-template-columns:18px 1fr;gap:12px;color:var(--muted);font-size:.96rem;line-height:1.5}
+.about__panel svg{width:15px;height:15px;margin-top:5px;stroke:var(--lime);stroke-width:2.2;fill:none}
+
+/* ============ FAQ ============ */
+.faq{margin-top:48px;max-width:860px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;
+  font-family:var(--f-display);font-weight:500;font-size:1.08rem;letter-spacing:-.015em;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"";position:absolute;right:8px;top:50%;width:11px;height:11px;
+  border-right:2px solid var(--blue-soft);border-bottom:2px solid var(--blue-soft);
+  transform:translateY(-70%) rotate(45deg);transition:transform .2s ease;
+}
+.faq details[open] summary::after{transform:translateY(-20%) rotate(225deg)}
+.faq summary:hover{color:var(--blue-soft)}
+.faq__a{padding:0 40px 24px 0;color:var(--muted);max-width:70ch}
+.faq details[open] .faq__a{animation:reveal .22s ease}
+@keyframes reveal{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+/* ============ FINAL CTA ============ */
+.final{position:relative;overflow:hidden;background:var(--navy-950)}
+.final::before{content:"";position:absolute;inset:auto 0 -60% 50%;transform:translateX(-50%);width:1000px;height:700px;background:radial-gradient(closest-side,rgba(46,107,255,.22),transparent 70%);pointer-events:none}
+.final__in{position:relative;text-align:center;max-width:44ch;margin-inline:auto}
+.final__in p{margin-top:22px;color:var(--muted);font-size:1.1rem}
+.final .btn-row{justify-content:center}
+.final small{display:block;margin-top:26px;color:var(--muted-dim);font-size:.88rem}
+
+/* ============ FOOTER ============ */
+.ftr{border-top:1px solid var(--line);padding-block:48px 40px;background:var(--navy-950)}
+.ftr__in{display:flex;flex-wrap:wrap;gap:28px 48px;justify-content:space-between;align-items:flex-start}
+.ftr__nav{display:flex;flex-wrap:wrap;gap:12px 26px}
+.ftr__nav a{color:var(--muted);font-size:.94rem}
+.ftr__nav a:hover{color:var(--white)}
+.ftr__bt{margin-top:38px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;color:var(--muted-dim);font-size:.86rem}
+
+/* ============ MOTION ============ */
+.rise{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s cubic-bezier(.22,.7,.3,1)}
+.rise.in{opacity:1;transform:none}
+.dash{stroke-dasharray:6 6;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .rise{opacity:1;transform:none}
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1000px){
+  .hero__in{grid-template-columns:1fr;gap:44px}
+  .pipe{order:2}
+  .about{grid-template-columns:1fr}
+  .step__b{grid-template-columns:1fr;gap:10px}
+}
+@media (max-width:860px){
+  .nav,.hdr__in>.btn{display:none}
+  .burger{display:block}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3n){border-right:1px solid var(--line)}
+  .stat:nth-child(2n){border-right:0}
+  .stat:nth-child(n+4){border-bottom:1px solid var(--line)}
+  .stat:nth-child(n+5){border-bottom:0}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .stats{grid-template-columns:1fr}
+  .stat{border-right:0 !important;border-bottom:1px solid var(--line) !important;padding:26px 22px}
+  .stat:last-child{border-bottom:0 !important}
+  .step{grid-template-columns:1fr;gap:12px}
+  .step__n::after{display:none}
+  .prob{padding-right:0}
+  .btn{width:100%}
+  .btn-row{gap:12px}
+  .headline-result{padding:22px}
+}
+</style>
+</head>
+<body>
+<a class="btn btn--sm btn--lime" href="#main" style="position:absolute;left:-9999px;top:8px;z-index:99" onfocus="this.style.left='16px'" onblur="this.style.left='-9999px'">Skip to content</a>
+
+<!-- =====================================================================
+     BOOKING LINK PLACEHOLDER
+     Every "Book a Discovery Call" CTA points to the URL below.
+     Live booking link: https://calendly.com/samar_rasheed
+     Update it here and in all CTAs if the link ever changes.
+     ===================================================================== -->
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="logo" href="#top" aria-label="Branded Outreach — home">
+      <svg class="logo__mark" viewBox="0 0 26 26" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="7" fill="#2E6BFF"/>
+        <path d="M7 13h5m0 0 3.5-4M12 13l3.5 4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <circle cx="18" cy="9" r="1.9" fill="#C8F751"/>
+        <circle cx="18" cy="17" r="1.9" fill="#C8F751"/>
+      </svg>
+      Branded Outreach
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#how">How It Works</a>
+      <a href="#services">Services</a>
+      <a href="#results">Results</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--primary btn--sm" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+  <div class="mnav" id="mnav">
+    <a href="#top">Home</a>
+    <a href="#how">How It Works</a>
+    <a href="#services">Services</a>
+    <a href="#results">Results</a>
+    <a href="#case-study">Case Study</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn--primary" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="wrap hero__in">
+    <div>
+      <p class="node">Outbound &amp; demand generation for agencies</p>
+      <h1><span>Build a predictable pipeline.</span><span>Create sustainable growth.</span></h1>
+      <p class="hero__sub">Branded Outreach helps B2B, PR, podcast guest booking and digital agencies acquire more clients through targeted outbound and demand generation.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://calendly.com/samar_rasheed">Let's Build Your Pipeline</a>
+        <a class="btn btn--ghost" href="#how">See How It Works</a>
+      </div>
+      <div class="hero__meta">
+        <span><b>~5,000</b> targeted prospects reached</span>
+        <span><b>484</b> qualified opportunities</span>
+        <span><b>485</b> bookings in under 3 months</span>
+      </div>
+    </div>
+
+    <div class="pipe" aria-hidden="false">
+      <div class="pipe__hd"><b>The outbound system</b><span>Prospect to pipeline</span></div>
+      <svg viewBox="0 0 420 320" role="img" aria-label="Diagram of the outbound system: a targeted prospect list narrows through personalised messaging and replies into qualified opportunities that feed the sales pipeline.">
+        <defs>
+          <linearGradient id="fun" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2E6BFF" stop-opacity=".30"/>
+            <stop offset="100%" stop-color="#C8F751" stop-opacity=".22"/>
+          </linearGradient>
+        </defs>
+        <path d="M18 26 L402 26 L318 300 L102 300 Z" fill="url(#fun)" stroke="rgba(140,170,225,.22)"/>
+        <g font-family="Inter,sans-serif">
+          <g>
+            <line x1="18" y1="70" x2="402" y2="70" stroke="rgba(140,170,225,.22)"/>
+            <text x="26" y="52" fill="#F3F7FF" font-size="13.5" font-weight="600">Targeted prospect list</text>
+            <text x="26" y="90" fill="#93A4C4" font-size="11.5">Right ICP, verified data</text>
+            <circle cx="386" cy="46" r="4" fill="#2E6BFF"/>
+          </g>
+          <g>
+            <line x1="42" y1="148" x2="378" y2="148" stroke="rgba(140,170,225,.22)"/>
+            <text x="50" y="130" fill="#F3F7FF" font-size="13.5" font-weight="600">Personalised outbound</text>
+            <text x="50" y="168" fill="#93A4C4" font-size="11.5">Relevant message, real context</text>
+            <circle cx="360" cy="124" r="4" fill="#2E6BFF"/>
+          </g>
+          <g>
+            <line x1="68" y1="226" x2="352" y2="226" stroke="rgba(140,170,225,.22)"/>
+            <text x="76" y="208" fill="#F3F7FF" font-size="13.5" font-weight="600">Sales conversations</text>
+            <text x="76" y="246" fill="#93A4C4" font-size="11.5">Replies, interest, intent</text>
+            <circle cx="334" cy="202" r="4" fill="#2E6BFF"/>
+          </g>
+          <text x="104" y="286" fill="#C8F751" font-size="13.5" font-weight="600">Qualified opportunities</text>
+        </g>
+        <path class="dash" d="M210 300 L210 316" stroke="#C8F751" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="sec sec--tint" id="problem">
+  <div class="wrap">
+    <div class="head head--wide rise">
+      <h2>Great services don't automatically create predictable growth.</h2>
+      <p class="lede">Most agencies we speak to are good at the work. The delivery is strong, the clients are happy, the case studies are real. The problem sits earlier in the process: where the next ten conversations are supposed to come from.</p>
+    </div>
+
+    <div class="probs">
+      <div class="prob rise"><div class="prob__n">01</div><h3>Lead flow moves in waves</h3><p>Two strong months, then a quiet quarter. Hiring, cash flow and delivery planning all become guesswork.</p></div>
+      <div class="prob rise"><div class="prob__n">02</div><h3>Referrals carry too much weight</h3><p>Referrals are excellent business. They're also unpredictable, unscalable, and completely outside your control.</p></div>
+      <div class="prob rise"><div class="prob__n">03</div><h3>Generic outreach gets ignored</h3><p>The same template sent to 3,000 people reads as noise. Prospects delete it in under a second, and your domain pays for it.</p></div>
+      <div class="prob rise"><div class="prob__n">04</div><h3>Prospecting eats real hours</h3><p>Senior people spend afternoons in LinkedIn tabs and spreadsheets instead of pitching, positioning or delivering.</p></div>
+      <div class="prob rise"><div class="prob__n">05</div><h3>The data is unreliable</h3><p>Bounced sends, wrong job titles, contacts who left two years ago. Bad data quietly ruins good messaging.</p></div>
+      <div class="prob rise"><div class="prob__n">06</div><h3>Nothing accumulates</h3><p>There's no pipeline to look at on a Monday. Every month starts from zero instead of from a list of live conversations.</p></div>
+      <div class="prob rise"><div class="prob__n">07</div><h3>It all runs through the founder</h3><p>When business development depends on one person's calendar and energy, growth stops the moment they get busy.</p></div>
+      <div class="prob rise"><div class="prob__n">08</div><h3>Effort isn't measurable</h3><p>Without open, reply and opportunity numbers, you can't tell whether the offer, the list or the message is the problem.</p></div>
+    </div>
+
+    <p class="prob-note rise">None of this is a service quality problem. It's an acquisition system problem, and it's fixable.</p>
+  </div>
+</section>
+
+<!-- ===================== SOLUTION / PROCESS ===================== -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="head head--wide rise">
+      <p class="node">How it works</p>
+      <h2>Turn outbound into a client acquisition system.</h2>
+      <p class="lede">Five steps, run in order, every month. Each one has an output the next one depends on — which is what makes the results repeatable instead of lucky.</p>
+    </div>
+
+    <div class="steps">
+      <article class="step rise">
+        <div class="step__n">01</div>
+        <div class="step__b">
+          <h3>Define</h3>
+          <p>We work out who actually buys from you and why. Company type, size, role, and the buying signals worth acting on — a funding round, a new hire, a launch, a change in strategy. Everything downstream is built on this.</p>
+        </div>
+      </article>
+      <article class="step rise">
+        <div class="step__n">02</div>
+        <div class="step__b">
+          <h3>Target</h3>
+          <p>We build the prospect list from scratch against that profile: the right decision-makers, verified contact data, and enough context on each account to say something relevant. No bought lists, no scraped dumps.</p>
+        </div>
+      </article>
+      <article class="step rise">
+        <div class="step__n">03</div>
+        <div class="step__b">
+          <h3>Engage</h3>
+          <p>We write and launch outbound that reads like it was meant for that specific company. Angles are tested against real segments, and messaging is rewritten based on what gets replies — not on what sounded good in the first draft.</p>
+        </div>
+      </article>
+      <article class="step rise">
+        <div class="step__n">04</div>
+        <div class="step__b">
+          <h3>Qualify</h3>
+          <p>Replies get handled and sorted. Genuine interest is separated from polite acknowledgement, timing objections are noted for follow-up, and high-intent prospects are prioritised.</p>
+        </div>
+      </article>
+      <article class="step rise">
+        <div class="step__n">05</div>
+        <div class="step__b">
+          <h3>Convert</h3>
+          <p>Qualified opportunities are handed to your sales process with the full context of the conversation, so whoever takes the call isn't starting cold.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="btn-row rise">
+      <a class="btn btn--primary" href="https://calendly.com/samar_rasheed">Let's Build Your Pipeline</a>
+      <a class="btn btn--ghost" href="#case-study">See the campaign numbers</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="sec sec--tint rule" id="services">
+  <div class="wrap">
+    <div class="head head--wide rise">
+      <p class="node">Services</p>
+      <h2>Everything between your ideal client and a booked conversation.</h2>
+      <p class="lede">These work as one system. Most engagements use all of them; some agencies already have part of it in place and only need the missing pieces.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card rise">
+        <svg class="card__ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".8" fill="#5C8DFF" stroke="none"/></svg>
+        <h3>Client Acquisition</h3>
+        <p>A repeatable route to new clients that doesn't depend on referrals, marketplaces or the founder's network.</p>
+      </article>
+      <article class="card rise">
+        <svg class="card__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h6l2-5 3 10 2-5h5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Targeted Outbound</h3>
+        <p>Campaigns aimed at a defined list of accounts, with messaging built for that segment rather than sent at volume.</p>
+      </article>
+      <article class="card rise">
+        <svg class="card__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9m5 11V4m5 16v-7m5 7V7" stroke-linecap="round"/></svg>
+        <h3>Demand Generation</h3>
+        <p>Creating interest where there wasn't any yet — reaching companies that fit before they start shopping around.</p>
+      </article>
+      <article class="card rise">
+        <svg class="card__ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4" stroke-linecap="round"/></svg>
+        <h3>ICP &amp; Prospect Research</h3>
+        <p>Defining who to go after and why, then researching accounts properly so outreach has something real to say.</p>
+      </article>
+      <article class="card rise">
+        <svg class="card__ic" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+        <h3>B2B Data &amp; Lead Sourcing</h3>
+        <p>Contact data built and verified against your profile — correct roles, working addresses, current companies.</p>
+      </article>
+      <article class="card rise">
+        <svg class="card__ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 8 9 6 9-6"/></svg>
+        <h3>Cold Email Outreach</h3>
+        <p>Written, launched and managed sequences, including deliverability setup, sending infrastructure and follow-up.</p>
+      </article>
+      <article class="card rise">
+        <svg class="card__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8Z" stroke-linejoin="round"/></svg>
+        <h3>Sales Pipeline Development</h3>
+        <p>Turning scattered replies into a tracked pipeline with stages, follow-up timing and visible next actions.</p>
+      </article>
+      <article class="card rise">
+        <svg class="card__ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7 10 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 4h5v5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Qualified Opportunity Generation</h3>
+        <p>Handing over prospects who have shown genuine interest, with the context your team needs to take the call.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESULTS ===================== -->
+<section class="sec results" id="results">
+  <div class="wrap">
+    <div class="head head--wide rise">
+      <p class="node">Campaign results</p>
+      <h2>Outbound should be measurable.</h2>
+      <p class="lede">These are the numbers from one real campaign run for a US-based PR and podcast booking firm. They're shown as a case study of what the system produced there — not as a projection or a promise of what any other campaign will do.</p>
+    </div>
+
+    <div class="board rise" id="board">
+      <div class="board__hd">
+        <b>US PR &amp; podcast booking firm — outbound campaign</b>
+        <span>Reported campaign metrics</span>
+      </div>
+      <div class="stats">
+        <div class="stat stat--blue">
+          <div class="stat__v tabular" data-count="12.7" data-suffix="K+" data-dec="1">0</div>
+          <div class="stat__l">Emails sent</div>
+        </div>
+        <div class="stat">
+          <div class="stat__v tabular" data-count="62.0" data-suffix="%" data-dec="1">0</div>
+          <div class="stat__l">Open rate</div>
+          <div class="bar"><i data-fill="62"></i></div>
+        </div>
+        <div class="stat">
+          <div class="stat__v tabular" data-count="17.8" data-suffix="%" data-dec="1">0</div>
+          <div class="stat__l">Click rate</div>
+          <div class="bar"><i data-fill="17.8"></i></div>
+        </div>
+        <div class="stat stat--lime">
+          <div class="stat__v tabular" data-count="8.0" data-suffix="%" data-dec="1">0</div>
+          <div class="stat__l">Reply rate</div>
+          <div class="bar"><i data-fill="8"></i></div>
+        </div>
+        <div class="stat stat--lime">
+          <div class="stat__v tabular" data-count="484" data-dec="0">0</div>
+          <div class="stat__l">Opportunities</div>
+        </div>
+        <div class="stat stat--blue">
+          <div class="stat__v tabular" data-count="724500" data-prefix="$" data-suffix="+" data-dec="0" data-comma="1">0</div>
+          <div class="stat__l">Potential revenue</div>
+        </div>
+      </div>
+      <p class="board__ft">Potential revenue reflects the value of the opportunities generated, based on the client's own deal values. It isn't closed revenue, and closing remains the client's sales process.</p>
+    </div>
+
+    <div class="headline-result rise">
+      <b class="tabular">485 bookings</b>
+      <p>One campaign generated 485 bookings in less than 3 months by reaching approximately 5,000 targeted prospects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHO WE HELP ===================== -->
+<section class="sec rule" id="who">
+  <div class="wrap">
+    <div class="head head--wide rise">
+      <p class="node">Who we help</p>
+      <h2>Built for agencies that want more than random leads.</h2>
+      <p class="lede">The system is the same. What changes is the profile we target, the signals we watch for, and the reason a prospect should care.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card card--who rise">
+        <h3>B2B Agencies</h3>
+        <p>Strong delivery, thin top of funnel. We define who's worth pursuing and build a steady flow of conversations with the people who sign off on budget.</p>
+        <span class="tagline">Consistent conversations, not spikes</span>
+      </article>
+      <article class="card card--who rise">
+        <h3>PR Agencies</h3>
+        <p>PR is sold on relevance, so the outreach has to be relevant too. We target brands and founders at the moment they have a reason to want coverage.</p>
+        <span class="tagline">Reach founders at the right moment</span>
+      </article>
+      <article class="card card--who rise">
+        <h3>Podcast Guest Booking Agencies</h3>
+        <p>The area we've run at scale. High-volume targeting of shows and guests, with messaging built to get a reply rather than to be forwarded to a spam folder.</p>
+        <span class="tagline">Proven in this exact space</span>
+      </article>
+      <article class="card card--who rise">
+        <h3>Digital Agencies</h3>
+        <p>Crowded category, similar pitches. We build outreach around the specific problem you solve so it doesn't read like every other agency email that week.</p>
+        <span class="tagline">Differentiate before the call</span>
+      </article>
+      <article class="card card--who rise">
+        <h3>Web Development Agencies</h3>
+        <p>Project work means the pipeline empties as fast as it fills. We keep new opportunities arriving while current builds are still running.</p>
+        <span class="tagline">Refill the pipeline mid-project</span>
+      </article>
+      <article class="card card--who rise">
+        <h3>Marketing, SEO &amp; Branding Agencies</h3>
+        <p>Retainers are sold on trust. We open conversations with companies that already have the budget and the intent, then hand them over warm.</p>
+        <span class="tagline">Retainer-ready conversations</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY ===================== -->
+<section class="sec sec--tint" id="why">
+  <div class="wrap">
+    <div class="head head--wide rise">
+      <p class="node">Why Branded Outreach</p>
+      <h2>Strategy first, volume second.</h2>
+      <p class="lede">Sending more emails is the easiest part of outbound and the least useful. Here's where the actual difference gets made.</p>
+    </div>
+
+    <div class="why">
+      <div class="why__i rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>ICP-first targeting</h3><p>We agree who we're going after and why before a single message is written.</p></div></div>
+      <div class="why__i rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Relevant prospect data</h3><p>Lists are built and verified for each campaign against your profile, not pulled off a shelf.</p></div></div>
+      <div class="why__i rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Personalised outbound</h3><p>Messaging references the account's actual situation, which is why it gets read and answered.</p></div></div>
+      <div class="why__i rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Quality over lead count</h3><p>Fifty conversations with the right companies beat five hundred contacts who were never going to buy.</p></div></div>
+      <div class="why__i rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Intent-focused prospecting</h3><p>We look for buying signals and time outreach around them instead of contacting everyone at once.</p></div></div>
+      <div class="why__i rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Measurable pipeline</h3><p>Sends, opens, replies and opportunities are reported every month, including the campaigns that underperform.</p></div></div>
+      <div class="why__i rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Built around your offer</h3><p>Campaigns start from what you actually sell and who it's for, not from a reusable template.</p></div></div>
+      <div class="why__i rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Direct, hands-on work</h3><p>You work with the person running your campaigns, not an account manager relaying messages.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CASE STUDY ===================== -->
+<section class="sec cs" id="case-study">
+  <div class="wrap">
+    <div class="cs__hero rise">
+      <p class="node">Case study — US PR &amp; podcast booking firm</p>
+      <h2>How targeted outbound generated 485 bookings in less than 3 months.</h2>
+      <p class="lede">A single campaign, roughly 5,000 targeted prospects, and a system built around one specific offer.</p>
+    </div>
+
+    <div class="cs__strip rise">
+      <div><b class="tabular">~5,000</b><span>Targeted prospects</span></div>
+      <div><b class="tabular">12.7K+</b><span>Emails sent</span></div>
+      <div><b class="tabular">62.0%</b><span>Open rate</span></div>
+      <div><b class="tabular">17.8%</b><span>Click rate</span></div>
+      <div><b class="tabular">8.0%</b><span>Reply rate</span></div>
+      <div><b class="tabular">484</b><span>Opportunities</span></div>
+      <div><b class="tabular" style="color:#C8F751">485</b><span>Bookings, under 3 months</span></div>
+      <div><b class="tabular" style="color:#5C8DFF">$724,500+</b><span>Potential revenue</span></div>
+    </div>
+
+    <div class="story">
+      <div class="story__i rise">
+        <div class="story__k">The challenge</div>
+        <p>A US-based PR and podcast booking firm needed a reliable way to reach new prospects at scale. Growth depended on outreach that could run continuously, produce measurable conversations, and stay relevant enough to get replies rather than complaints.</p>
+      </div>
+      <div class="story__i rise">
+        <div class="story__k">The targeting</div>
+        <p>We defined the profile worth pursuing and built a list of approximately 5,000 targeted prospects that matched it, with verified contact data. The list was the campaign's foundation — every number further down depends on getting this part right.</p>
+      </div>
+      <div class="story__i rise">
+        <div class="story__k">The outreach</div>
+        <p>Over 12,700 emails were sent across sequenced campaigns, with messaging written for the offer and the audience rather than adapted from a template. Deliverability was managed alongside the copy, because a 62% open rate is as much an infrastructure result as a subject-line result.</p>
+      </div>
+      <div class="story__i rise">
+        <div class="story__k">The engagement</div>
+        <p>The campaign reached a 62.0% open rate, a 17.8% click rate and an 8.0% reply rate. Replies were handled and sorted so genuine interest was separated from everything else instead of sitting in an inbox.</p>
+      </div>
+      <div class="story__i rise">
+        <div class="story__k">The opportunities</div>
+        <p>484 qualified opportunities came out of those conversations, representing $724,500+ in potential revenue based on the client's own deal values.</p>
+      </div>
+      <div class="story__i rise">
+        <div class="story__k">The result</div>
+        <p>485 bookings were generated in less than 3 months. The campaign moved the firm from ad-hoc outreach to a repeatable process with numbers attached to every stage of it.</p>
+      </div>
+    </div>
+
+    <p class="cs__note rise">These figures are from one real campaign for one client. Results depend on the offer, the market, the list and the sales process behind the outreach — so treat this as evidence that the approach works, not as a forecast for your own campaign.</p>
+
+    <div class="btn-row rise">
+      <a class="btn btn--lime" href="https://calendly.com/samar_rasheed">Let's Build Your Pipeline</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="sec rule" id="about">
+  <div class="wrap about">
+    <div class="rise">
+      <p class="node">About</p>
+      <h2>A specialist practice, not an agency reselling agencies.</h2>
+      <p class="lede" style="margin-top:22px">Branded Outreach is a founder-led practice focused on one thing: helping agencies acquire clients through targeted outbound and demand generation.</p>
+      <p class="lede" style="margin-top:20px">Most of the hands-on work has been in the harder end of this market — running outbound at scale for a US-based PR and podcast booking firm, where the offer is competitive, the inboxes are crowded and the only thing that works is being relevant to the person you're writing to.</p>
+      <p class="lede" style="margin-top:20px">That experience shapes how every engagement runs. Targeting is agreed before anything is sent, messaging is built around your actual offer, and the numbers are reported honestly — including when a campaign needs rethinking. You work directly with the person running your campaigns.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
+      </div>
+    </div>
+
+    <aside class="about__panel rise">
+      <h3>How engagements usually run</h3>
+      <ul>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A discovery call to understand your offer, ICP and current acquisition process</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Targeting and messaging agreed with you before launch</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Sending infrastructure and deliverability set up properly</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Campaigns launched, monitored and adjusted on real reply data</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Qualified opportunities passed to your sales process with full context</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Monthly reporting on sends, opens, replies and opportunities</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec sec--tint" id="faq">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="node">FAQ</p>
+      <h2>Questions agency owners ask first.</h2>
+    </div>
+
+    <div class="faq rise">
+      <details>
+        <summary>What types of agencies do you work with?</summary>
+        <div class="faq__a"><p>B2B service agencies of most kinds: PR, podcast guest booking and podcast PR, digital marketing, web development, SEO, branding and similar. The common factor is a defined offer, a clear ideal client, and a sales process that can handle conversations once they're created.</p></div>
+      </details>
+      <details>
+        <summary>Do you provide the prospect data?</summary>
+        <div class="faq__a"><p>Yes. Lists are built and verified per campaign against the profile we agree, covering the right decision-makers with current contact details. If you already have data, we'll review and clean it before using it — bad data undermines good messaging faster than anything else.</p></div>
+      </details>
+      <details>
+        <summary>Do you write the outreach campaigns?</summary>
+        <div class="faq__a"><p>Yes. Sequences are written for your offer and your audience, then rewritten based on what actually earns replies. You approve the messaging before anything goes out.</p></div>
+      </details>
+      <details>
+        <summary>Do you manage the campaigns as well?</summary>
+        <div class="faq__a"><p>Yes — sending infrastructure, deliverability, launch, monitoring, follow-ups and reply handling. You can stay as close to the day-to-day as you want, but the running of it isn't your job.</p></div>
+      </details>
+      <details>
+        <summary>How do you identify the right prospects?</summary>
+        <div class="faq__a"><p>We start with who has already bought from you and why, then define the profile from there: company type, size, role and the buying signals worth acting on. Prospects are then researched against that profile so the outreach has something specific to reference.</p></div>
+      </details>
+      <details>
+        <summary>Do you guarantee meetings or clients?</summary>
+        <div class="faq__a"><p>No. Outcomes depend on your offer, your market, your pricing and your sales process — variables no outbound partner controls. What's committed to is the work and the transparency: targeting agreed up front, campaigns run properly, and honest reporting on sends, opens, replies and opportunities, including when the numbers are weak.</p></div>
+      </details>
+      <details>
+        <summary>How long does it take to see results?</summary>
+        <div class="faq__a"><p>The first two to three weeks go into targeting, data, messaging and sending setup. Early replies typically follow once campaigns are live, and a clearer picture of what's working — angles, segments, timing — emerges over the following weeks as volume builds. Outbound rewards steady iteration more than a fast start.</p></div>
+      </details>
+      <details>
+        <summary>Can you work with our existing CRM and sales process?</summary>
+        <div class="faq__a"><p>Yes. Opportunities are handed over in whatever way fits how you already work — your CRM, a shared pipeline view, or a straightforward handover with the conversation context attached. There's no requirement to change tools.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="sec final" id="contact">
+  <div class="wrap final__in">
+    <h2 class="rise">Ready to build a more predictable client pipeline?</h2>
+    <p class="rise">Let's talk about your ICP, your current acquisition process, and where targeted outbound can create more opportunities.</p>
+    <div class="btn-row rise">
+      <a class="btn btn--lime" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
+      <a class="btn btn--ghost" href="#how">See How It Works</a>
+    </div>
+    <small class="rise">A 30-minute call. If outbound isn't the right move for where you are, we'll say so.</small>
+    <small class="rise">Not ready for a call? <a href="contact.html" style="color:var(--blue-soft);text-decoration:underline">Tell us about your agency</a> and we'll reply with an honest read.</small>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__in">
+      <div style="max-width:34ch">
+        <a class="logo" href="#top" style="margin-bottom:14px">
+          <svg class="logo__mark" viewBox="0 0 26 26" aria-hidden="true">
+            <rect x="1" y="1" width="24" height="24" rx="7" fill="#2E6BFF"/>
+            <path d="M7 13h5m0 0 3.5-4M12 13l3.5 4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <circle cx="18" cy="9" r="1.9" fill="#C8F751"/>
+            <circle cx="18" cy="17" r="1.9" fill="#C8F751"/>
+          </svg>
+          Branded Outreach
+        </a>
+        <p class="dim" style="font-size:.94rem">Targeted outbound and demand generation for B2B, PR, podcast guest booking and digital agencies.</p>
+      </div>
+      <nav class="ftr__nav" aria-label="Footer">
+        <a href="#how">How It Works</a>
+        <a href="#services">Services</a>
+        <a href="#results">Results</a>
+        <a href="#case-study">Case Study</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--sm" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
+    </div>
+    <div class="ftr__bt">
+      <span>&copy; <span id="yr">2026</span> Branded Outreach. All rights reserved.</span>
+      <span>brandedoutreach.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* sticky header border */
+  var hdr = document.getElementById('hdr');
+  var onScroll = function(){ hdr.classList.toggle('is-stuck', window.scrollY > 8); };
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* mobile nav */
+  var burger = document.getElementById('burger'), mnav = document.getElementById('mnav');
+  burger.addEventListener('click', function(){
+    var open = mnav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  mnav.addEventListener('click', function(e){
+    if (e.target.tagName === 'A'){
+      mnav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && mnav.classList.contains('is-open')){
+      mnav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+      burger.focus();
+    }
+  });
+
+  /* reveal on scroll */
+  var rises = document.querySelectorAll('.rise');
+  if (reduce || !('IntersectionObserver' in window)){
+    rises.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    rises.forEach(function(el){ io.observe(el); });
+  }
+
+  /* stat counters + bars: run once when the results board is in view */
+  var board = document.getElementById('board');
+  var fmt = function(n, dec, comma){
+    var s = n.toFixed(dec);
+    return comma ? Number(s).toLocaleString('en-US') : s;
+  };
+  var runBoard = function(){
+    board.querySelectorAll('[data-count]').forEach(function(el){
+      var target = parseFloat(el.dataset.count),
+          dec = parseInt(el.dataset.dec || '0', 10),
+          pre = el.dataset.prefix || '',
+          suf = el.dataset.suffix || '',
+          comma = el.dataset.comma === '1';
+      if (reduce){ el.textContent = pre + fmt(target, dec, comma) + suf; return; }
+      var start = null, dur = 1100;
+      var tick = function(ts){
+        if (!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = pre + fmt(target * eased, dec, comma) + suf;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+    board.querySelectorAll('[data-fill]').forEach(function(b){
+      b.style.width = Math.min(parseFloat(b.dataset.fill), 100) + '%';
+    });
+  };
+  if (!('IntersectionObserver' in window)) { runBoard(); }
+  else {
+    var bio = new IntersectionObserver(function(en){
+      if (en[0].isIntersecting){ runBoard(); bio.disconnect(); }
+    }, {threshold:.25});
+    bio.observe(board);
+  }
+})();
+</script>
+</body>
+</html>
