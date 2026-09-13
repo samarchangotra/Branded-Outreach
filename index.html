@@ -314,6 +314,56 @@ p{margin:0}
   .btn-row{gap:12px}
   .headline-result{padding:22px}
 }
+
+/* ===================== CONTACT / LEAD CAPTURE ===================== */
+.ctc{--red:#FF8A8A}
+.ctc__cols{position:relative;display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(34px,5vw,64px);align-items:start}
+.ctc__aside h2{margin-bottom:20px}
+.ctc__lede{color:var(--muted);font-size:1.06rem;max-width:44ch}
+.ctc__list{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:13px}
+.ctc__list li{display:grid;grid-template-columns:18px 1fr;gap:12px;color:var(--muted);font-size:.96rem;line-height:1.5}
+.ctc__list svg{width:15px;height:15px;margin-top:5px;stroke:var(--lime);stroke-width:2.2;fill:none}
+.ctc__direct{margin-top:34px;padding-top:26px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+.ctc__direct a{color:var(--blue-soft);text-decoration:underline}
+.ctc__direct p+p{margin-top:8px}
+.ctc__panel{background:linear-gradient(160deg,rgba(15,27,54,.82),rgba(8,16,34,.9));border:1px solid var(--line);border-radius:20px;padding:clamp(24px,3.4vw,38px)}
+.ctc__hd{margin-bottom:28px}
+.ctc__hd h3{font-family:var(--f-display);font-weight:600;font-size:1.5rem;letter-spacing:-.02em}
+.ctc__hd p{color:var(--muted);font-size:.98rem;margin-top:8px}
+.ctc__field{margin-bottom:20px}
+.ctc__field label{display:block;font-family:var(--f-display);font-weight:500;font-size:1rem;letter-spacing:-.01em;margin-bottom:9px}
+.ctc__opt{color:var(--muted-dim);font-family:var(--f-body);font-weight:400;font-size:.86rem;margin-left:8px}
+.ctc input[type=text],.ctc input[type=email],.ctc input[type=tel],.ctc select,.ctc textarea{
+  width:100%;background:rgba(4,9,21,.6);border:1px solid var(--line-strong);border-radius:10px;
+  padding:13px 15px;color:var(--white);font-family:var(--f-body);font-size:1rem;line-height:1.5;
+  transition:border-color .16s ease,background .16s ease;
+}
+.ctc textarea{min-height:130px;resize:vertical}
+.ctc input::placeholder,.ctc textarea::placeholder{color:#5C6B87}
+.ctc input:hover,.ctc select:hover,.ctc textarea:hover{border-color:rgba(140,170,225,.4)}
+.ctc input:focus,.ctc select:focus,.ctc textarea:focus{outline:none;border-color:var(--blue);background:rgba(46,107,255,.07);box-shadow:0 0 0 3px rgba(46,107,255,.16)}
+.ctc select{appearance:none;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235C8DFF' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;background-size:18px;padding-right:42px}
+.ctc select option{background:#0A1327;color:var(--white)}
+.ctc__two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ctc__err{display:none;color:var(--red);font-size:.87rem;margin-top:7px}
+.ctc__field.has-err .ctc__err{display:block}
+.ctc__field.has-err input,.ctc__field.has-err textarea{border-color:var(--red)}
+.ctc__submit{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.ctc__submit .btn{min-width:210px}
+.ctc__submit small{color:var(--muted-dim);font-size:.86rem;max-width:34ch;line-height:1.5}
+.ctc .btn[disabled]{opacity:.6;cursor:not-allowed}
+.ctc__done{display:none;text-align:center;padding:16px 0 6px}
+.ctc__done.is-active{display:block}
+.ctc__tick{width:58px;height:58px;margin:0 auto 22px;border-radius:50%;background:rgba(200,247,81,.12);display:grid;place-items:center}
+.ctc__tick svg{width:27px;height:27px;stroke:var(--lime);stroke-width:2.4;fill:none}
+.ctc__done h3{font-family:var(--f-display);font-weight:600;font-size:1.4rem;letter-spacing:-.02em}
+.ctc__done p{color:var(--muted);max-width:44ch;margin:14px auto 0}
+.ctc__row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.ctc__fail{display:none;margin-top:18px;padding:16px 18px;border:1px solid rgba(255,138,138,.4);background:rgba(255,138,138,.07);border-radius:10px;font-size:.94rem}
+.ctc__fail.is-active{display:block}
+.ctc__fail a{color:var(--lime);text-decoration:underline}
+@media (max-width:960px){.ctc__cols{grid-template-columns:1fr;gap:38px}}
+@media (max-width:620px){.ctc__two{grid-template-columns:1fr}.ctc__panel{padding:22px 18px 26px}.ctc__submit .btn{width:100%;min-width:0}}
 </style>
 </head>
 <body>
@@ -344,6 +394,7 @@ p{margin:0}
       <a href="#results">Results</a>
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a class="btn btn--primary btn--sm" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
@@ -358,7 +409,7 @@ p{margin:0}
     <a href="#case-study">Case Study</a>
     <a href="#about">About</a>
     <a href="#faq">FAQ</a>
-    <a href="contact.html">Contact</a>
+    <a href="#contact">Contact</a>
     <a class="btn btn--primary" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
   </div>
 </header>
@@ -395,24 +446,21 @@ p{margin:0}
         <path d="M18 26 L402 26 L318 300 L102 300 Z" fill="url(#fun)" stroke="rgba(140,170,225,.22)"/>
         <g font-family="Inter,sans-serif">
           <g>
-            <line x1="18" y1="70" x2="402" y2="70" stroke="rgba(140,170,225,.22)"/>
-            <text x="26" y="52" fill="#F3F7FF" font-size="13.5" font-weight="600">Targeted prospect list</text>
-            <text x="26" y="90" fill="#93A4C4" font-size="11.5">Right ICP, verified data</text>
-            <circle cx="386" cy="46" r="4" fill="#2E6BFF"/>
+            <line x1="42" y1="70" x2="378" y2="70" stroke="rgba(140,170,225,.22)"/>
+            <text x="210" y="52" text-anchor="middle" fill="#F3F7FF" font-size="13.5" font-weight="600">Targeted prospect list</text>
+            <text x="210" y="90" text-anchor="middle" fill="#93A4C4" font-size="11.5">Right ICP, verified data</text>
           </g>
           <g>
-            <line x1="42" y1="148" x2="378" y2="148" stroke="rgba(140,170,225,.22)"/>
-            <text x="50" y="130" fill="#F3F7FF" font-size="13.5" font-weight="600">Personalised outbound</text>
-            <text x="50" y="168" fill="#93A4C4" font-size="11.5">Relevant message, real context</text>
-            <circle cx="360" cy="124" r="4" fill="#2E6BFF"/>
+            <line x1="65" y1="148" x2="355" y2="148" stroke="rgba(140,170,225,.22)"/>
+            <text x="210" y="130" text-anchor="middle" fill="#F3F7FF" font-size="13.5" font-weight="600">Personalised outbound</text>
+            <text x="210" y="168" text-anchor="middle" fill="#93A4C4" font-size="11.5">Relevant message, real context</text>
           </g>
           <g>
-            <line x1="68" y1="226" x2="352" y2="226" stroke="rgba(140,170,225,.22)"/>
-            <text x="76" y="208" fill="#F3F7FF" font-size="13.5" font-weight="600">Sales conversations</text>
-            <text x="76" y="246" fill="#93A4C4" font-size="11.5">Replies, interest, intent</text>
-            <circle cx="334" cy="202" r="4" fill="#2E6BFF"/>
+            <line x1="89" y1="226" x2="331" y2="226" stroke="rgba(140,170,225,.22)"/>
+            <text x="210" y="208" text-anchor="middle" fill="#F3F7FF" font-size="13.5" font-weight="600">Sales conversations</text>
+            <text x="210" y="246" text-anchor="middle" fill="#93A4C4" font-size="11.5">Replies, interest, intent</text>
           </g>
-          <text x="104" y="286" fill="#C8F751" font-size="13.5" font-weight="600">Qualified opportunities</text>
+          <text x="210" y="286" text-anchor="middle" fill="#C8F751" font-size="13.5" font-weight="600">Qualified opportunities</text>
         </g>
         <path class="dash" d="M210 300 L210 316" stroke="#C8F751" stroke-width="2" fill="none"/>
       </svg>
@@ -799,7 +847,7 @@ p{margin:0}
 </section>
 
 <!-- ===================== FINAL CTA ===================== -->
-<section class="sec final" id="contact">
+<section class="sec final" id="cta">
   <div class="wrap final__in">
     <h2 class="rise">Ready to build a more predictable client pipeline?</h2>
     <p class="rise">Let's talk about your ICP, your current acquisition process, and where targeted outbound can create more opportunities.</p>
@@ -808,7 +856,109 @@ p{margin:0}
       <a class="btn btn--ghost" href="#how">See How It Works</a>
     </div>
     <small class="rise">A 30-minute call. If outbound isn't the right move for where you are, we'll say so.</small>
-    <small class="rise">Not ready for a call? <a href="contact.html" style="color:var(--blue-soft);text-decoration:underline">Tell us about your agency</a> and we'll reply with an honest read.</small>
+    <small class="rise">Not ready for a call? <a href="#contact" style="color:var(--blue-soft);text-decoration:underline">Tell us about your agency</a> and we'll reply with an honest read.</small>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="sec sec--tint ctc" id="contact">
+  <div class="wrap ctc__cols">
+
+    <div class="ctc__aside">
+      <p class="node rise">Get in touch</p>
+      <h2 class="rise">Let's talk about your pipeline.</h2>
+      <p class="ctc__lede rise">Send us a few details about your agency and what you're trying to fix. We'll reply within one business day.</p>
+      <ul class="ctc__list rise">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>A real reply from the person who'd run your campaigns</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>An honest read, including if outbound isn't the right move yet</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Your details are used to reply to you &mdash; nothing else</span></li>
+      </ul>
+      <div class="ctc__direct rise">
+        <p>Prefer to skip the form? <a href="https://calendly.com/samar_rasheed">Book a discovery call</a>.</p>
+        <p>Or email <a href="mailto:samar@brandedoutreach.com">samar@brandedoutreach.com</a>.</p>
+      </div>
+    </div>
+
+    <div class="ctc__panel rise">
+      <form id="lead" novalidate>
+        <div class="ctc__hd">
+          <h3>Send us your details</h3>
+          <p>Fields marked with * are required. Everything else is optional.</p>
+        </div>
+
+        <div class="ctc__field">
+          <label for="ct-name">Full name *</label>
+          <input type="text" id="ct-name" name="full_name" autocomplete="name" placeholder="Your name" required />
+          <p class="ctc__err">Please enter your name.</p>
+        </div>
+
+        <div class="ctc__two">
+          <div class="ctc__field">
+            <label for="ct-email">Email *</label>
+            <input type="email" id="ct-email" name="email" autocomplete="email" inputmode="email" placeholder="you@agency.com" required />
+            <p class="ctc__err">Please enter a valid email address.</p>
+          </div>
+          <div class="ctc__field">
+            <label for="ct-phone">Phone / WhatsApp *</label>
+            <input type="tel" id="ct-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+1 555 000 0000" required />
+            <p class="ctc__err">Please enter a phone number with country code.</p>
+          </div>
+        </div>
+
+        <div class="ctc__two">
+          <div class="ctc__field">
+            <label for="ct-agency">Agency name <span class="ctc__opt">optional</span></label>
+            <input type="text" id="ct-agency" name="agency_name" autocomplete="organization" placeholder="e.g. Northline PR" />
+          </div>
+          <div class="ctc__field">
+            <label for="ct-type">Type of agency <span class="ctc__opt">optional</span></label>
+            <select id="ct-type" name="agency_type">
+              <option value="">Select&hellip;</option>
+              <option>B2B services</option>
+              <option>PR</option>
+              <option>Podcast guest booking</option>
+              <option>Digital marketing</option>
+              <option>Web development</option>
+              <option>SEO</option>
+              <option>Branding</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="ctc__field">
+          <label for="ct-message">What do you need help with? *</label>
+          <textarea id="ct-message" name="message" required placeholder="Tell us what you sell, who your ideal client is, and where client acquisition is stalling right now."></textarea>
+          <p class="ctc__err">Please tell us a little about what you need.</p>
+        </div>
+
+        <!-- honeypot: hidden from people; FormSubmit also filters this field server-side -->
+        <div aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px">
+          <label for="ct-honey">Leave this empty</label>
+          <input type="text" id="ct-honey" name="_honey" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="ctc__submit">
+          <button type="submit" class="btn btn--lime" id="ct-submit">Send message</button>
+          <small>We'll only use these details to reply to your enquiry.</small>
+        </div>
+
+        <div class="ctc__fail" id="ct-fail" role="alert"></div>
+      </form>
+
+      <div class="ctc__done" id="ct-done" role="status">
+        <div class="ctc__tick">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Thanks &mdash; message received.</h3>
+        <p>We'll get back to you at the email you gave us, usually within one business day.</p>
+        <div class="ctc__row">
+          <a class="btn btn--primary" href="https://calendly.com/samar_rasheed">Book a call now</a>
+          <a class="btn btn--ghost" href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -837,7 +987,7 @@ p{margin:0}
         <a href="#case-study">Case Study</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
-        <a href="contact.html">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
       <a class="btn btn--primary btn--sm" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
     </div>
@@ -927,6 +1077,90 @@ p{margin:0}
     }, {threshold:.25});
     bio.observe(board);
   }
+})();
+</script>
+
+<script>
+/* ============ CONTACT FORM ============
+   Submissions post to FormSubmit, which forwards to the address below.
+   The FIRST submission triggers a one-time confirmation email to that
+   inbox — click the link in it once and the form is live for good.
+   To move to Formspree / your own API, change FORM_ENDPOINT. Nothing else. */
+(function(){
+  var FALLBACK_EMAIL = 'samar@brandedoutreach.com';
+  var FORM_ENDPOINT  = 'https://formsubmit.co/ajax/' + FALLBACK_EMAIL;
+
+  var form = document.getElementById('lead');
+  if (!form) return;
+  var submit = document.getElementById('ct-submit'),
+      fail   = document.getElementById('ct-fail'),
+      done   = document.getElementById('ct-done'),
+      panel  = form.parentNode;
+
+  function mark(el, bad){
+    var f = el.closest('.ctc__field');
+    if (!f) return;
+    f.classList.toggle('has-err', bad);
+    el.setAttribute('aria-invalid', bad ? 'true' : 'false');
+  }
+
+  function validate(){
+    var ok = true, first = null;
+    [['ct-name', function(v){ return v.length > 1; }],
+     ['ct-email', function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }],
+     ['ct-phone', function(v){ return v.replace(/\D/g,'').length >= 7; }],
+     ['ct-message', function(v){ return v.length > 1; }]
+    ].forEach(function(pair){
+      var el = document.getElementById(pair[0]), bad = !pair[1](el.value.trim());
+      mark(el, bad);
+      if (bad){ ok = false; first = first || el; }
+    });
+    if (first){
+      first.closest('.ctc__field').scrollIntoView({behavior:'smooth', block:'center'});
+      first.focus({preventScroll:true});
+    }
+    return ok;
+  }
+
+  form.addEventListener('input', function(e){
+    if (e.target.closest('.ctc__field.has-err')) mark(e.target, false);
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!validate()) return;
+
+    var fd = new FormData(form), data = {};
+    fd.forEach(function(v, k){ data[k] = v; });
+    if (data._honey) return;                   /* honeypot tripped */
+    delete data._honey;
+    data.submitted_at = new Date().toISOString();
+    data._subject  = 'New enquiry — ' + (data.full_name || 'Branded Outreach website');
+    data._template = 'table';
+    data._captcha  = 'false';
+
+    fail.classList.remove('is-active');
+    submit.disabled = true;
+    submit.textContent = 'Sending…';
+
+    fetch(FORM_ENDPOINT, {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify(data)
+    })
+    .then(function(r){ if(!r.ok) throw new Error(r.status); })
+    .then(function(){
+      form.style.display = 'none';
+      done.classList.add('is-active');
+      panel.scrollIntoView({behavior:'smooth', block:'center'});
+    })
+    .catch(function(){
+      submit.disabled = false;
+      submit.textContent = 'Send message';
+      fail.innerHTML = 'That didn\'t send. Email us at <a href="mailto:' + FALLBACK_EMAIL + '">' + FALLBACK_EMAIL + '</a> or <a href="https://calendly.com/samar_rasheed">book a call</a> instead.';
+      fail.classList.add('is-active');
+    });
+  });
 })();
 </script>
 </body>
