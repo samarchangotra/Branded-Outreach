@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Branded Outreach — Predictable Pipeline for B2B, PR &amp; Digital Agencies</title>
 <meta name="description" content="Branded Outreach helps B2B, PR, podcast guest booking and digital agencies acquire more clients through targeted outbound and demand generation. ICP-first targeting, personalised outreach, measurable pipeline." />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/favicon-512.png" sizes="512x512" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="canonical" href="https://www.brandedoutreach.com/" />
 <meta name="theme-color" content="#050B18" />
 <meta name="robots" content="index, follow" />
@@ -63,7 +66,7 @@
 
 /* ============ BASE ============ */
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
 body{
   margin:0;
   background:var(--navy-900);
@@ -122,7 +125,7 @@ p{margin:0}
 .hdr.is-stuck{border-bottom-color:var(--line);background:rgba(4,9,21,.94)}
 .hdr__in{display:flex;align-items:center;gap:32px;height:74px}
 .logo{display:flex;align-items:center;gap:11px;font-family:var(--f-display);font-weight:700;font-size:1.09rem;letter-spacing:-.03em;flex-shrink:0}
-.logo__mark{width:26px;height:26px;flex:0 0 26px}
+.logo__mark{width:auto;height:30px;flex:0 0 auto;display:block}
 .nav{display:flex;gap:28px;margin-left:auto}
 .nav a{font-size:.95rem;color:var(--muted);transition:color .16s ease}
 .nav a:hover{color:var(--white)}
@@ -379,12 +382,7 @@ p{margin:0}
 <header class="hdr" id="hdr">
   <div class="wrap hdr__in">
     <a class="logo" href="#top" aria-label="Branded Outreach — home">
-      <svg class="logo__mark" viewBox="0 0 26 26" aria-hidden="true">
-        <rect x="1" y="1" width="24" height="24" rx="7" fill="#2E6BFF"/>
-        <path d="M7 13h5m0 0 3.5-4M12 13l3.5 4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-        <circle cx="18" cy="9" r="1.9" fill="#C8F751"/>
-        <circle cx="18" cy="17" r="1.9" fill="#C8F751"/>
-      </svg>
+      <img class="logo__mark" src="/logo-mark.png" alt="" width="41" height="30" decoding="async" />
       Branded Outreach
     </a>
     <nav class="nav" aria-label="Primary">
@@ -394,7 +392,7 @@ p{margin:0}
       <a href="#results">Results</a>
       <a href="#about">About</a>
       <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+      <a href="/contact">Contact</a>
     </nav>
     <a class="btn btn--primary btn--sm" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
     <button class="burger" id="burger" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
@@ -409,7 +407,7 @@ p{margin:0}
     <a href="#case-study">Case Study</a>
     <a href="#about">About</a>
     <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
+    <a href="/contact">Contact</a>
     <a class="btn btn--primary" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
   </div>
 </header>
@@ -856,7 +854,7 @@ p{margin:0}
       <a class="btn btn--ghost" href="#how">See How It Works</a>
     </div>
     <small class="rise">A 30-minute call. If outbound isn't the right move for where you are, we'll say so.</small>
-    <small class="rise">Not ready for a call? <a href="#contact" style="color:var(--blue-soft);text-decoration:underline">Tell us about your agency</a> and we'll reply with an honest read.</small>
+    <small class="rise">Not ready for a call? <a href="/contact" style="color:var(--blue-soft);text-decoration:underline">Tell us about your agency</a> and we'll reply with an honest read.</small>
   </div>
 </section>
 
@@ -970,12 +968,7 @@ p{margin:0}
     <div class="ftr__in">
       <div style="max-width:34ch">
         <a class="logo" href="#top" style="margin-bottom:14px">
-          <svg class="logo__mark" viewBox="0 0 26 26" aria-hidden="true">
-            <rect x="1" y="1" width="24" height="24" rx="7" fill="#2E6BFF"/>
-            <path d="M7 13h5m0 0 3.5-4M12 13l3.5 4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-            <circle cx="18" cy="9" r="1.9" fill="#C8F751"/>
-            <circle cx="18" cy="17" r="1.9" fill="#C8F751"/>
-          </svg>
+          <img class="logo__mark" src="/logo-mark.png" alt="" width="41" height="30" decoding="async" />
           Branded Outreach
         </a>
         <p class="dim" style="font-size:.94rem">Targeted outbound and demand generation for B2B, PR, podcast guest booking and digital agencies.</p>
@@ -987,7 +980,7 @@ p{margin:0}
         <a href="#case-study">Case Study</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+        <a href="/contact">Contact</a>
       </nav>
       <a class="btn btn--primary btn--sm" href="https://calendly.com/samar_rasheed">Book a Discovery Call</a>
     </div>
@@ -1161,6 +1154,104 @@ p{margin:0}
       fail.classList.add('is-active');
     });
   });
+})();
+</script>
+<script>
+/* Path-style URLs for in-page sections.
+   The nav is a set of #anchors on a one-page site. Instead of letting the
+   browser leave "#services" in the address bar, we scroll ourselves and
+   push a real path: brandedoutreach.com/services. The home section gets
+   "/" rather than "/top".
+
+   This only works because _redirects serves index.html at each of these
+   paths (status 200), so a direct hit or refresh on /services still loads
+   the page — and the on-load handler below scrolls to the right section.
+   If you add a new section, add it in BOTH places or its URL will 404. */
+(function () {
+  var PATHS = {
+    top:          '/',
+    how:          '/how-it-works',
+    services:     '/services',
+    results:      '/results',
+    'case-study': '/case-study',
+    about:        '/about',
+    faq:          '/faq'
+  };
+
+  var IDS = {};
+  Object.keys(PATHS).forEach(function (id) { IDS[PATHS[id]] = id; });
+
+  /* Pages serves these as directories, so the live URL comes back as
+     "/services/" with a trailing slash. Strip it before looking up. */
+  function currentPath() {
+    var p = location.pathname;
+    return p.length > 1 ? p.replace(/\/+$/, '') : p;
+  }
+
+  var reduce = window.matchMedia &&
+               window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* scrollIntoView, not window.scrollTo — the latter is a no-op on this page.
+     The sticky header is handled by scroll-padding-top on <html>, so the
+     heading never ends up hidden behind it. */
+  function scrollToSection(id, smooth) {
+    var behavior = (smooth && !reduce) ? 'smooth' : 'auto';
+    if (id === 'top') {
+      document.documentElement.scrollIntoView({ behavior: behavior, block: 'start' });
+      return true;
+    }
+    var el = document.getElementById(id);
+    if (!el) return false;
+    el.scrollIntoView({ behavior: behavior, block: 'start' });
+    return true;
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!a) return;
+    if (e.defaultPrevented) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+
+    var id = a.getAttribute('href').slice(1);
+    var path = PATHS[id];
+    if (!path) return;            /* leaves the #main skip-link alone */
+    if (!scrollToSection(id, true)) return;
+
+    e.preventDefault();
+    if (currentPath() !== path) {
+      history.pushState({ section: id }, '', path + location.search);
+    }
+  });
+
+  /* Back/forward should move between sections, not dump the user at the top. */
+  window.addEventListener('popstate', function () {
+    var id = IDS[currentPath()];
+    if (id) scrollToSection(id, true);
+  });
+
+  /* Direct hit or refresh on /services etc. — land on the right section.
+     Done without smooth scrolling so it doesn't look like a glitch on load. */
+  var landing = IDS[currentPath()];
+  if (landing && landing !== 'top') {
+    window.addEventListener('load', function () {
+      scrollToSection(landing, false);
+      /* Reveal animations and late-loading fonts shift the layout a little
+         after load, which leaves the landing a few hundred px off. Re-seat
+         it once things have settled. */
+      setTimeout(function () { scrollToSection(landing, false); }, 450);
+    });
+  }
+
+  /* Old links that still carry a hash keep working, then tidy the URL. */
+  if (location.hash) {
+    var hid = location.hash.slice(1);
+    if (PATHS[hid]) {
+      setTimeout(function () {
+        scrollToSection(hid, false);
+        history.replaceState(null, '', PATHS[hid] + location.search);
+      }, 0);
+    }
+  }
 })();
 </script>
 </body>
