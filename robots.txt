@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Section URLs (/services, /about, ...) serve the same page as / and
+# canonicalise to it. Left crawlable on purpose; they are not in the sitemap.
+
+Sitemap: https://www.brandedoutreach.com/sitemap.xml
