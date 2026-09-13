@@ -133,7 +133,7 @@ p{margin:0}
 .field{margin-bottom:20px}
 .field label{display:block;font-family:var(--f-display);font-weight:500;font-size:1rem;letter-spacing:-.01em;margin-bottom:9px}
 .opt{color:var(--muted-dim);font-family:var(--f-body);font-weight:400;font-size:.86rem;margin-left:8px}
-input[type=text],input[type=email],input[type=tel],select,textarea{
+input[type=text],input[type=email],input[type=tel],input[type=url],select,textarea{
   width:100%;background:rgba(4,9,21,.6);border:1px solid var(--line-strong);border-radius:10px;
   padding:13px 15px;color:var(--white);font-family:var(--f-body);font-size:1rem;line-height:1.5;
   transition:border-color .16s ease,background .16s ease;
@@ -242,6 +242,18 @@ select option{background:#0A1327;color:var(--white)}
 
         <div class="two">
           <div class="field">
+            <label for="website">Website *</label>
+            <input type="url" id="website" name="website" autocomplete="url" inputmode="url" placeholder="agency.com" required />
+            <p class="err">Please enter your website address.</p>
+          </div>
+          <div class="field">
+            <label for="country">Country <span class="opt">optional</span></label>
+            <input type="text" id="country" name="country" autocomplete="country-name" placeholder="e.g. United States" />
+          </div>
+        </div>
+
+        <div class="two">
+          <div class="field">
             <label for="agency">Agency name <span class="opt">optional</span></label>
             <input type="text" id="agency" name="agency_name" autocomplete="organization" placeholder="e.g. Northline PR" />
           </div>
@@ -339,6 +351,7 @@ select option{background:#0A1327;color:var(--white)}
     [['name', function(v){ return v.length > 1; }],
      ['email', function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }],
      ['phone', function(v){ return v.replace(/\D/g,'').length >= 7; }],
+     ['website', function(v){ return /^(https?:\/\/)?[a-z0-9][a-z0-9.-]*\.[a-z]{2,}(\/.*)?$/i.test(v); }],
      ['message', function(v){ return v.length > 1; }]
     ].forEach(function(pair){
       var el = document.getElementById(pair[0]), bad = !pair[1](el.value.trim());
@@ -364,6 +377,7 @@ select option{background:#0A1327;color:var(--white)}
     fd.forEach(function(v, k){ data[k] = v; });
     if (data._honey) return;                   /* honeypot tripped */
     delete data._honey;
+    if (data.website && !/^https?:\/\//i.test(data.website)) data.website = 'https://' + data.website;
     data.submitted_at = new Date().toISOString();
 
     /* FormSubmit control fields — how the email arrives in your inbox */

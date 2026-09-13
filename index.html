@@ -568,7 +568,7 @@ p{margin:0}
 .ctc__field{margin-bottom:20px}
 .ctc__field label{display:block;font-family:var(--f-display);font-weight:500;font-size:1rem;letter-spacing:-.01em;margin-bottom:9px}
 .ctc__opt{color:var(--muted-dim);font-family:var(--f-body);font-weight:400;font-size:.86rem;margin-left:8px}
-.ctc input[type=text],.ctc input[type=email],.ctc input[type=tel],.ctc select,.ctc textarea{
+.ctc input[type=text],.ctc input[type=email],.ctc input[type=tel],.ctc input[type=url],.ctc select,.ctc textarea{
   width:100%;background:rgba(4,9,21,.6);border:1px solid var(--line-strong);border-radius:10px;
   padding:13px 15px;color:var(--white);font-family:var(--f-body);font-size:1rem;line-height:1.5;
   transition:border-color .16s ease,background .16s ease;
@@ -1137,6 +1137,18 @@ p{margin:0}
 
         <div class="ctc__two">
           <div class="ctc__field">
+            <label for="ct-website">Website *</label>
+            <input type="url" id="ct-website" name="website" autocomplete="url" inputmode="url" placeholder="agency.com" required />
+            <p class="ctc__err">Please enter your website address.</p>
+          </div>
+          <div class="ctc__field">
+            <label for="ct-country">Country <span class="ctc__opt">optional</span></label>
+            <input type="text" id="ct-country" name="country" autocomplete="country-name" placeholder="e.g. United States" />
+          </div>
+        </div>
+
+        <div class="ctc__two">
+          <div class="ctc__field">
             <label for="ct-agency">Agency name <span class="ctc__opt">optional</span></label>
             <input type="text" id="ct-agency" name="agency_name" autocomplete="organization" placeholder="e.g. Northline PR" />
           </div>
@@ -1334,6 +1346,7 @@ p{margin:0}
     [['ct-name', function(v){ return v.length > 1; }],
      ['ct-email', function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }],
      ['ct-phone', function(v){ return v.replace(/\D/g,'').length >= 7; }],
+     ['ct-website', function(v){ return /^(https?:\/\/)?[a-z0-9][a-z0-9.-]*\.[a-z]{2,}(\/.*)?$/i.test(v); }],
      ['ct-message', function(v){ return v.length > 1; }]
     ].forEach(function(pair){
       var el = document.getElementById(pair[0]), bad = !pair[1](el.value.trim());
@@ -1359,6 +1372,7 @@ p{margin:0}
     fd.forEach(function(v, k){ data[k] = v; });
     if (data._honey) return;                   /* honeypot tripped */
     delete data._honey;
+    if (data.website && !/^https?:\/\//i.test(data.website)) data.website = 'https://' + data.website;
     data.submitted_at = new Date().toISOString();
     data._subject  = 'New enquiry — ' + (data.full_name || 'Branded Outreach website');
     data._template = 'table';
