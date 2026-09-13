@@ -27,7 +27,7 @@ jobs:
         run: |
           SECTIONS="how-it-works services results case-study about faq"
           rm -rf dist && mkdir -p dist
-          cp index.html contact.html dist/
+          cp index.html contact.html robots.txt sitemap.xml dist/
           cp logo-mark.png favicon-32.png favicon-512.png apple-touch-icon.png og-image.jpg dist/
           for s in $SECTIONS; do
             mkdir -p "dist/$s"
